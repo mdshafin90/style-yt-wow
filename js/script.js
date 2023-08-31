@@ -28,22 +28,27 @@ const specificTab = async (categoryId) => {
     for (const data of datas) {
         console.log(data);
         const div = document.createElement('div');
+        const verifiedBadge = data?.authors[0]?.verified;
+        console.log(verifiedBadge);
         div.innerHTML = `
-        <div class="card bg-base-100 shadow-xl">
+        <div class="card h-[300px] bg-base-100 shadow-xl">
         <figure>
             <img src="${data?.thumbnail}" alt="Shoes" />
         </figure>
-        <div class="card-body">
+        <div class="flex p-4 items-start">
             <div>
-                <img src="" alt="">
+                <img class="rounded-full w-[50px] h-[50px]" src="${data?.authors[0]?.profile_picture}" alt="">
             </div>
-            <div>
+            <div class="ml-5">
                 <h2 class="card-title">${data?.title}</h2>
-                <p>${data?.authors[0].profile_name} ${data?.authors[0]?.verified}</p>
-                <p>${data?.others?.views}</p>
-            </div>
+                <div class="flex items-center">
+                   <div>
+                      <p>${data?.authors[0].profile_name}</p>
+                   </div>
+                <img class="w-[20px] h-[20px] ml-2" src="${verifiedBadge === true ? './logo-icon/badge.png' : ""}">
                 </div>
-
+                <p>${data?.others?.views} Views</p>
+            </div>
         </div>
         `
         cardContainer.appendChild(div);
