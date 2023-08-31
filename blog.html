@@ -5,10 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q & A</title>
+
+    <!-- Tailwind CSS & DaisyUI Links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <h1>this is question sections</h1>
+    <h1 class="text-center text-5xl font-semibold my-4">Questions & Answers</h1>
+    <div class="border-y-4 rounded-3xl border-blue-600 p-5 mx-10 my-8">
+        <p class="text-4xl font-semibold text-start">Q1: Discuss the scope of var, let, and const</p>
+        <p class="text-3xl font-semibold my-3">Ans:</p>
+        <p class="text-lg font-normal"><span class="font-bold">1. var:</span> var is a functional scope variable. Also
+            it is a changing & hoisting variable when you use this it is hoisted upper level of this called variable. It
+            was used on past but now we using let as a changeable variable and it has not any kind of hoisting problem.
+        </p>
+        <p class="text-lg font-normal"><span class="font-bold">2. let:</span> let is block scope variable. If you want
+            to reassign any value you have
+            to use "Let" because "let"
+            is a changeable variable</p>
+        <p class="text-lg font-normal"><span class="font-bold">3. const:</span> const is a block scope variable. If you
+            have a permanent value which
+            will be not changing this time
+            you have to use "const"
+            variable. But if you want to change assigned value which is belongs to an array or object you can easily
+            change the value of element. Exm: const num = [1, 2, 3]; now you want to change the 2 with 6 you can -->
+            num[1] = 5.</p>
+    </div>
+    <div class="border-y-4 rounded-3xl border-blue-600 p-5 mx-10 my-8">
+        <p class="text-4xl font-semibold text-start">Q1: Tell us the use cases of null and undefined</p>
+        <p class="text-3xl font-semibold my-3">Ans:</p>
+        <p class="text-lg font-normal"><span class="font-bold">1. null:</span> null means an empty value or a blank
+            value. It is one of primitive types in JS. The variable which has been assigned as null contains no value.
+            If you check the typeOf() this
+            assigned value you got the result of object </p>
+        <p class="text-lg font-normal"><span class="font-bold">2. undefined:</span> undefined means the variable has
+            been declared but no assigned right now. This is also primitive types in JS. If you declare a variable but
+            not assigned any value then you got
+            undefined. If you check the typeOf() undefined you got the result is undefined.</p>
+    </div>
+    <div class="border-y-4 rounded-3xl border-blue-600 p-5 mx-10 my-8">
+        <p class="text-4xl font-semibold text-start">Q1: What do you mean by REST API?</p>
+        <p class="text-3xl font-semibold my-3">Ans:</p>
+        <p class="text-lg font-normal"><span class="font-bold">1. Rest API:</span> An API (application programming
+            interface) also known as (RESTful API) is a set of rules that define how applications or devices can connect
+            to and communicate with each other. REST stands for (representational state transfer) and was created by
+            computer scientist (Roy Fielding).</p>
+    </div>
 </body>
 
 </html>
