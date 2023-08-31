@@ -45,7 +45,7 @@ const specificTab = async (categoryId) => {
                    <div>
                       <p>${data?.authors[0].profile_name}</p>
                    </div>
-                <img class="w-[20px] h-[20px] ml-2" src="${verifiedBadge === true ? './logo-icon/badge.png' : ""}">
+                <img class="w-[20px] h-[20px] ml-2" src="${verifiedBadge === true ? './logo-icon/badge.png' : './logo-icon/white.jpg'}">
                 </div>
                 <p>${data?.others?.views} Views</p>
             </div>
